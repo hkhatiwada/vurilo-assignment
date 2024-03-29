@@ -1,4 +1,3 @@
-import CarouselView from "./_sections/Carousel";
 import cover from "../public/indoor.jpg.jpg";
 import WindowView from "./_sections/WindowView";
 

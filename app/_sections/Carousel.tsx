@@ -17,13 +17,11 @@ const CarouselView = () => {
     const updatedCart = [...cart, item];
     setCart(updatedCart);
     setCart([...cart, item]);
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   const removeFromCart = (itemId: number) => {
     const updatedCart = cart.filter((item: SlideInfo) => item.id !== itemId);
     setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
   };
 
   const [slideData, setSlideData] = useState<SlideInfo[]>([]);

@@ -7,13 +7,7 @@ import { useDisclosure } from "@mantine/hooks";
 
 const WindowView = () => {
   const [opened, { toggle, close }] = useDisclosure(false);
-  const [cart, setCart] = useState([]);
-  useEffect(() => {
-    const storedCart = localStorage.getItem("cart");
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    }
-  }, [localStorage.getItem("cart")?.length]);
+
   return (
     <div className="w-full">
       <Dialog
